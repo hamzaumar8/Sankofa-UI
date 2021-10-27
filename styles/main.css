@@ -219,8 +219,7 @@ section {
 }
 
 .button {
-    width: 178px;
-    height: 61px;
+    
     background: none;
     text-align: center;
     border: solid 2px #1b1b1b;
@@ -1368,7 +1367,7 @@ section {
     color: #fff
 }
 
-@charset "utf-8";
+
 @media only screen and (max-width:1600px) {
     .header_social {
         display: none
@@ -1410,8 +1409,6 @@ section {
         display: inline-block
     }
     .home_slider_container {
-        padding-left: 30px;
-        padding-right: 30px
     }
     .home_slider_title {
         font-size: 48px
