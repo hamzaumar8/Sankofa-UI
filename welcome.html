@@ -7,8 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Sublime project">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="styles/all.css" />
-    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap4/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/plugins/OwlCarousel2-2.2.1/owl.carousel.css" />
+    <link rel="stylesheet" type="text/css" href="assets/plugins/OwlCarousel2-2.2.1/owl.theme.default.css" />
+    <link rel="stylesheet" type="text/css" href="assets/plugins/OwlCarousel2-2.2.1/animate.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/main_styles.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
 </head>
 
 <body>
@@ -19,10 +25,10 @@
                 <div class="container">
                     <div class="row">
                         <div class="col">
-                            <div class="header_content d-flex flex-row align-items-center justify-content-start">
+                            <div class="header_content d-flex flex-row align-items-center justify-content-between">
                                 <div class="logo">
                                     <a href="#">
-                                        <img src="assets/images/SANKOFA_Elements_202009_LogoBird.png" alt="Sankofa Logo" class="img-fluid" height="120">
+                                        <img src="assets/images/logo.png" alt="Sankofa Logo" class="img-fluid" height="120">
                                     </a>
                                 </div>
                                 <nav class="main_nav">
@@ -44,7 +50,7 @@
                                         <li><a href="contact.html">Contact</a></li>
                                     </ul>
                                 </nav>
-                                <div class="header_extra ml-auto">
+                                <div class="header_extra">
                                     <div class="shopping_cart">
                                         <a href="cart.html">
                                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +90,14 @@
                                             </svg>
                                         </div>
                                     </div>
-                                    <div class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></div>
+                                    <div class="search">
+                                        <div class="search_icon">
+                                            <img src="assets/images/svg/profile.svg" width="17" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="hamburger">
+                                        <img src="assets/images/svg/list-menu.svg" width="17" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -162,7 +175,9 @@
                     </ul>
                 </div>
             </div>
-            <div class="menu_close"><i class="fa fa-times" aria-hidden="true"></i></div>
+            <div class="menu_close">
+                <img src="assets/images/svg/cross.svg" alt="" width="17">
+            </div>
             <div class="menu_social">
                 <ul>
                     <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
@@ -180,7 +195,7 @@
 
                     <div class="owl-item home_slider_item">
                         <div class="home_slider_background"
-                            style="background-image:url(assets/images/SankofaBanner.png)"></div>
+                            style="background-image:url(assets/images/banner/_banner1.jpg)"></div>
                         <div class="home_slider_content_container">
                             <div class="container">
                                 <div class="row">
@@ -191,7 +206,7 @@
                                             <div class="home_slider_subtitle">Lorem ipsum dolor sit amet, consectetur
                                                 adipiscing elit. Nullam a ultricies metus. Sed nec molestie eros. Sed
                                                 viverra velit venenatis fermentum luctus.</div>
-                                            <div class="button button_light home_button"><a href="#">Shop Now</a></div>
+                                            <div class="button button_dark home_button"><a href="#">shop now <span class="pl-2"><img src="assets/images/svg/basket.svg" width="17" alt=""></span></a></div>
                                         </div>
                                     </div>
                                 </div>
@@ -200,29 +215,28 @@
                     </div>
 
                     <div class="owl-item home_slider_item">
-                        <div class="home_slider_background"
-                            style="background-image:url(assets/images/banner/_banne2.jpg)"></div>
-                        <div class="home_slider_content_container">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="home_slider_content" data-animation-in="fadeIn"
-                                            data-animation-out="animate-out fadeOut">
-                                            <div class="home_slider_title">A new Online Shop experience.</div>
-                                            <div class="home_slider_subtitle">Lorem ipsum dolor sit amet, consectetur
-                                                adipiscing elit. Nullam a ultricies metus. Sed nec molestie eros. Sed
-                                                viverra velit venenatis fermentum luctus.</div>
-                                            <div class="button button_light home_button"><a href="#">Shop Now</a></div>
+                        <div class="home_slider_background" style="background-image:url(assets/images/banner/_banner2.jpg)"></div>
+                            <div class="home_slider_content_container">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="home_slider_content" data-animation-in="fadeIn"
+                                                data-animation-out="animate-out fadeOut">
+                                                <div class="home_slider_title">A new Online Shop experience.</div>
+                                                <div class="home_slider_subtitle">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit. Nullam a ultricies metus. Sed nec molestie eros. Sed
+                                                    viverra velit venenatis fermentum luctus.</div>
+                                                <div class="button button_dark home_button"><a href="#">Shop Now</a></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
                     </div>
 
                     <div class="owl-item home_slider_item">
                         <div class="home_slider_background"
-                            style="background-image:url(images/xhome_slider_1.jpg.pagespeed.ic.10jUHFklPy.webp)"></div>
+                            style="background-image:url(assets/images/banner/_banner3.jpg)"></div>
                         <div class="home_slider_content_container">
                             <div class="container">
                                 <div class="row">
@@ -233,7 +247,7 @@
                                             <div class="home_slider_subtitle">Lorem ipsum dolor sit amet, consectetur
                                                 adipiscing elit. Nullam a ultricies metus. Sed nec molestie eros. Sed
                                                 viverra velit venenatis fermentum luctus.</div>
-                                            <div class="button button_light home_button"><a href="#">Shop Now</a></div>
+                                            <div class="button button_dark home_button"><a href="#">Shop Now</a></div>
                                         </div>
                                     </div>
                                 </div>
@@ -502,7 +516,7 @@
             </div>
         </footer>
     </div>
-    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
     <script src="assets/js/bootstrap4/popper.js"></script>
     <script src="assets/js/bootstrap4/bootstrap.min.js"></script>
     <script src="assets/plugins/greensock/TweenMax.min.js"></script>
