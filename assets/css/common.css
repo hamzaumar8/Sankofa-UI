@@ -232,6 +232,7 @@ section
 {
 	padding: 0px !important;
 }
+
 .button_dark{
     background-color: #1f1f1f !important;
 }
@@ -263,9 +264,12 @@ section
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
 }
-.button a img{
-    display: inline-block;
-    width: unset;
+
+.button img
+.button a span img,
+.button a  img{
+    display: inline-block !important;
+    width: 17px !important;
 }
 .button::after
 {
@@ -500,7 +504,6 @@ section
 	font-size: 14px;
 	font-weight: 500;
 	color: #1b1b1b;
-	margin-left: 13px;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;
@@ -514,7 +517,7 @@ section
 .search
 {
 	display: inline-block;
-	margin-left: 51px;
+	margin: auto 25px;
 	cursor: pointer;
 	vertical-align: sub;
 	-webkit-transform: translateY(-1px);
